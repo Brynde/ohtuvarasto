@@ -75,7 +75,7 @@ class TestVarasto(unittest.TestCase):
     def test_alku_saldo_liikaa(self):
         varasto = Varasto(10, -1)
     
-        self.assertAlmostEqual(varasto.saldo, 0)
+        self.assertAlmostEqual(varasto.saldo, 1)
 
     def test_str_palauttaa_oikean_muodon(self):
         teksti = str(self.varasto)
